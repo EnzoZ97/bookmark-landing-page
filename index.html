@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+</head>
+<body id="body">
+
+  <div class="background-for-mobile" id="background-for-mobile">
+    <header>  
+      <div class="icon-logo">
+        <img src="images/logo-bookmark.svg" alt="" class="logo" id="logo">
+      </div>
+      <div class="nav-and-icon">
+        <img src="images/icon-hamburger.svg" alt="" class="icon-hamburger" id="icon-hamburger" onclick="changeIcon()">
+        <nav id="nav">
+          <div class="elem">
+            <hr>
+            <a href="#">Features</a>
+          </div>
+          <div class="elem">
+            <hr>
+            <a href="#">Pricing</a>
+          </div>
+          <div class="elem">
+            <hr>
+            <a href="#">Contact</a>
+          </div>
+          <div class="elem">
+            <hr class="line-of-botton">
+            <a href="#" class="botton">Login</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="icons" id="icons">
+      <a href="https://www.facebook.com">
+        <img src="images/icon-facebook.svg" alt="" class="facebook">
+      </a>
+      <a href="https://twitter.com/?lang=es">
+        <img src="images/icon-twitter.svg" alt="" class="twitter">
+      </a>    
+    </div>
+  </div>
+  
+
+  <section class="title-and-image">
+    <div class="left">
+      <h1 class="title" id="title">A Simple Bookmark Manager</h1>
+      <p class="pampedour">A clean and simple interface to organize your favourite websites. Open a new 
+        browser tab and see your sites load instantly. Try it for free.</p>
+      <div class="bottons">
+        <div class="firts-botton">
+          <a href="#">Get it on Chrome</a>
+        </div>
+        <div class="second-botton">
+          <a href="#">Get it on Firefox</a>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="background-blue"></div>
+      <img src="images/illustration-hero.svg" alt="">
+    </div>
+  </section>
+
+  
+  
+  <section class="features">
+    <div class="title-and-paragraph">
+      <h2 class="title">Features</h2>
+      <p class="paragraph">Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.</p>
+    </div>
+
+    <div class="three-subtitles">
+      <div class="first-subtitle">
+        <p onclick="ActiveHr('line-1')" >Simple Bookmarking</p>
+        <hr id="line-1">
+      </div>
+      <div class="second-subtitle">
+        <p onclick="ActiveHr('line-2')" >Speedy Searching</p>
+        <hr id="line-2">
+      </div>
+      <div class="third-subtitle">
+        <p onclick="ActiveHr('line-3')" >Easy Sharing</p>
+        <hr id="line-3">
+      </div>
+    </div>
+
+    <div class="box-bookmark">
+      <div class="left">
+        <div class="background"></div>
+        <img src="images/illustration-features-tab-1.svg" alt="" id="illustration-features">
+      </div>
+      <div class="right">
+        <h2 id="title-2">Bookmark in one click</h2>
+        <p id="paragraph-2">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.</p>
+        <a href="#" class="botton">More Info</a>
+      </div>
+    </div>
+    
+
+  </section>
+  
+  <section class="extension">
+    <div class="title-and-paragraph">
+      <h2 class="title-extension">Download the extension</h2>
+      <p class="paragraph-extension">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favourite you’d like us to prioritize.</p>
+    </div>
+    
+    <div class="box-Icon-extension">
+      <div class="Chrome">
+        <img src="images/logo-chrome.svg" alt="" class="logo-Chrome">
+        <h4 class="subtitle">Add to Chrome</h4>
+        <p class="pampedour">Minimum version 62</p>
+        <a href="#" class="botton-Chrome">Add & Install Extension</a>
+      </div>
+      <div class="Firefox">
+        <img src="images/logo-firefox.svg" alt="" class="logo-Firefox">
+        <h4 class="subtitle">Add to Firefox</h4>
+        <p class="pampedour">Minimum version 55</p>
+        <a href="" class="botton-Firefox">Add & Install Extension</a>
+      </div>
+      <div class="Opera">
+        <img src="images/logo-opera.svg" alt="" class="logo-Opera">
+        <h4 class="subtitle">Add to Opera</h4>
+        <p class="pampedour">Minimum version 46</p>
+        <a href="" class="botton-Opera">Add & Install Extension</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="Questions">
+    <div class="title-and-paragraph">
+      <h2 class="title-Questions">Frequently Asked Questions</h2>
+      <p class="paragraph">Here are some of our FAQs. If you have any other questions you’d like 
+        answered please feel free to email us.</p>
+    </div>
+    <div class="box-questions">
+      <div class="Question1">
+        <div class="Question1-and-arrow" onclick="ChangeArrowAndParagraph('Question1-arrow','Question1-Answer')">
+          <p class="Question1-Bookmark">What is Bookmark?</p>
+          <img id="Question1-arrow" src="images/icon-arrow.svg" alt="">
+        </div>
+        
+        <p class="Question1-Answer" id="Question1-Answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
+      <div class="Question2">
+        <div class="Question2-and-arrow" onclick="ChangeArrowAndParagraph('Question2-arrow','Question2-Answer')">
+          <p class="Question2-browser">How can I request a new browser?</p>
+          <img id="Question2-arrow" src="images/icon-arrow.svg" alt="">
+        </div>
+        <p class="Question2-Answer" id="Question2-Answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      </div>
+      <div class="Question3" onclick="ChangeArrowAndParagraph('Question3-arrow','Question3-Answer')">
+        <div class="Question3-and-arrow">
+          <p class="Question3-mobile">Is there a mobile app?</p>
+          <img id="Question3-arrow" src="images/icon-arrow.svg" alt="">
+        </div>
+        <p class="Question3-Answer" id="Question3-Answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+          sollicitudin ex et ultricies bibendum.</p>
+      </div>
+      <div class="Question4" onclick="ChangeArrowAndParagraph('Question4-arrow','Question4-Answer')">
+        <div class="Question4-and-arrow">
+          <p class="Question4-browsers">What about other Chromium browsers?</p>
+          <img id="Question4-arrow" src="images/icon-arrow.svg" alt="">
+        </div>     
+        <p class="Question4-Answer" id="Question4-Answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+          vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      </div>
+    </div>
+
+    <a href="#" class="botton">More Info</a>
+  </section>
+
+
+  <section class="contact">
+    <div class="box-contact">
+      <p class="small-title">35,000+ already joined</p>
+      <h2>Stay up-to-date with what we’re doing</h2>
+      <div class="contact-us">
+        <div class="left">
+          <div class="background" id="background">
+            <input type="email" id="email">
+            <img src="images/icon-error.svg" id="icon-error" alt="">
+          </div> 
+          <div class="background-error" id="background-error"></div>
+          <p class="message-of-error" id="message-of-error">Whoops, make sure it's an email</p>        
+        </div>
+        <div class="right" id="Contact-Us">
+          <a href="#" class="botton"  onclick="Email()" >Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="left">
+      <img src="images/logo-bookmark.svg" alt="" class="footer-logo">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="right">
+      <img src="images/icon-facebook.svg" alt="" class="icon-facebook">
+      <img src="images/icon-twitter.svg" alt="" class="icon-twitter">
+    </div>
+  </footer>
+
+  
+  
+  
+  
+  
+  <script src="JavaScript.js"></script>
+</body>
+</html>
